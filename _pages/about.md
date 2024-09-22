@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Aaron R. King | PhD Student"
+title: 
 author_profile: true
 redirect_from: 
   - /about/
