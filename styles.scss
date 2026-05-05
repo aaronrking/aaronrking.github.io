@@ -1,0 +1,256 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Source Sans 3", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+$headings-font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+$body-bg: #FCFAF4;
+$body-color: #26120B;
+$link-color: #385928;
+$navbar-bg: #FCFAF4;
+$navbar-fg: #26120B;
+$navbar-hl: #385928;
+$footer-bg: #26120B;
+$footer-fg: #F7F1E6;
+$border-radius: .9rem;
+
+/*-- scss:rules --*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap');
+
+:root {
+  --forest: #385928;
+  --gold: #F2C063;
+  --umber: #8C512E;
+  --clay: #BF7C41;
+  --espresso: #26120B;
+  --paper: #F7F1E6;
+  --offwhite: #FCFAF4;
+}
+
+body {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.04rem;
+  line-height: 1.68;
+  background:
+    radial-gradient(circle at top left, rgba(242, 192, 99, 0.18), transparent 26rem),
+    var(--offwhite);
+}
+
+h1, h2, h3, h4, .navbar-title {
+  color: var(--espresso);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4.6vw, 4.7rem);
+  line-height: .98;
+}
+
+h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid rgba(56, 89, 40, .2);
+  padding-bottom: .25rem;
+}
+
+.navbar, .navbar-title, .nav-link, .quarto-title-meta, .btn, .card-label, .eyebrow, .smallcaps, .site-note, footer {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(38, 18, 11, .12);
+  box-shadow: 0 1px 18px rgba(38, 18, 11, .04);
+}
+
+.navbar-title {
+  font-family: "Crimson Pro", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration-thickness: .06em;
+  text-underline-offset: .18em;
+}
+
+a:hover {
+  color: var(--umber);
+}
+
+.quarto-title-banner {
+  background: transparent;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+  margin: 2rem 0 3rem;
+}
+
+.hero-copy .eyebrow,
+.eyebrow {
+  color: var(--umber);
+  font-size: .86rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.hero-copy p.lead {
+  font-size: clamp(1.18rem, 1.8vw, 1.45rem);
+  line-height: 1.55;
+  margin: 1.25rem 0 1.65rem;
+}
+
+.hero-media {
+  position: relative;
+}
+
+.hero-media::before {
+  content: "";
+  position: absolute;
+  inset: -1rem 1rem 1rem -1rem;
+  border: 1px solid rgba(140, 81, 46, .35);
+  border-radius: 1.5rem;
+  z-index: -1;
+}
+
+.hero-media img,
+.feature-image,
+.gallery-grid img,
+.headshot {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 18px 42px rgba(38, 18, 11, .13);
+}
+
+.headshot {
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 6px solid var(--paper);
+}
+
+.hero-portrait {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.hero-portrait p {
+  margin: 0;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin: 1.2rem 0 0;
+}
+
+.btn-site {
+  display: inline-block;
+  padding: .72rem 1rem;
+  border-radius: 999px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--forest);
+}
+
+.btn-primary-site {
+  background: var(--forest);
+  color: #fff !important;
+}
+
+.btn-secondary-site {
+  color: var(--forest) !important;
+  background: rgba(56, 89, 40, .06);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.card-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.site-card {
+  background: rgba(247, 241, 230, .8);
+  border: 1px solid rgba(56, 89, 40, .16);
+  border-radius: 1rem;
+  padding: 1.1rem;
+  box-shadow: 0 10px 25px rgba(38, 18, 11, .05);
+}
+
+.site-card h3 {
+  margin-top: .1rem;
+  font-size: 1.45rem;
+}
+
+.card-label {
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--umber);
+  font-weight: 700;
+}
+
+.callout-box {
+  background: rgba(56, 89, 40, .08);
+  border-left: 4px solid var(--forest);
+  padding: 1rem 1.15rem;
+  border-radius: .7rem;
+  margin: 1.25rem 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.gallery-grid figure {
+  margin: 0;
+}
+
+.gallery-grid figcaption,
+figcaption {
+  color: rgba(38, 18, 11, .72);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: .86rem;
+  margin-top: .4rem;
+}
+
+.list-compact li {
+  margin-bottom: .35rem;
+}
+
+.smallcaps {
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--umber);
+}
+
+.site-note {
+  color: rgba(38, 18, 11, .72);
+  font-size: .94rem;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .card-grid,
+  .card-grid.two,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

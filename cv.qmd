@@ -1,0 +1,24 @@
+---
+title: "CV"
+description: "Curriculum vitae for Aaron R. King."
+toc: false
+---
+
+[Download full CV as PDF](assets/pdf/King_Aaron_CV.pdf){.btn-site .btn-primary-site}
+
+## Selected highlights
+
+- PhD Candidate in Geography, University of Florida.
+- Graduate Certificate in Digital Geography and GIS.
+- Research interests: collaborative governance of conservation, CBNRM, environmental justice, social-ecological systems, political ecology, economic geography, GIS, spatial statistics, and Southern Africa.
+- Instructor of record for Economic Geography, Social Geography, and Population Geography.
+- Research Fellow with the Science for Nature and People Partnership CBNRM Governance & Economics Working Group.
+- Research Fellow with the Global Environment Facility Fonseca Leadership Program / Life Through Wildlife Fonseca Fellowships.
+- Co-organizer and co-facilitator of CBNRM governance, wildlife economics, and Governance Dashboard workshops in Namibia and South Africa.
+
+## Contact summary
+
+Email: [aaronrking@ufl.edu](mailto:aaronrking@ufl.edu)  
+Website: [aaronrking.com](https://aaronrking.com)  
+ORCID: [0000-0003-0261-3268](https://orcid.org/0000-0003-0261-3268)  
+Google Scholar: [Aaron R. King](https://scholar.google.com/citations?user=DPA0MYgAAAAJ&hl=en)

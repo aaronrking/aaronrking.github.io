@@ -1,0 +1,52 @@
+---
+title: "Dissertation"
+description: "Overview of dissertation research on institutions, authority, and CBNRM governance in Southern Africa."
+---
+
+# Institutions, Authority, and Governance
+
+## Understanding the Performance of Community-Based Natural Resource Management in Southern Africa
+
+My dissertation examines why community-based natural resource management has achieved notable conservation gains in Southern Africa while more unevenly producing rural development, livelihoods transformation, and political empowerment.
+
+I argue that this pattern is best understood institutionally. CBNRM emerged through a series of pragmatic policy reforms that opened space for community participation but often left authority, tenure, and proprietorship rights only partially devolved. These compromises produced durable constraints: communities were asked to govern wildlife and land, but often without the full rights and institutional authority required for democratic accountability, local adaptation, or equitable benefit distribution.
+
+::: {.callout-box}
+The dissertation reframes CBNRM performance as an institutional problem: not only whether communities participate, but what kinds of authority, information, trust, and social relations make participation meaningful.
+:::
+
+## Empirical focus
+
+The empirical core of the dissertation is original field research in six communal conservancies in Namibia. These surveys measure household-level experiences with governance participation, rights, rules, social trust, institutional trust, benefits, fairness, and wildlife tolerance. The project uses these data to examine both between-conservancy differences and fine-grained intra-community variation.
+
+## Working chapter architecture
+
+### 1. Aborted devolution and institutional development
+
+A comparative institutional chapter examines how CBNRM reforms emerged in Botswana, Namibia, Zambia, and Zimbabwe. It asks how reformers used political openings to move conservation policy away from exclusionary models, and why key rights and proprietorship principles were frequently left incomplete.
+
+### 2. Participation in Namibian conservancy governance
+
+This empirical chapter develops and applies a household-level Participatory Governance Index to analyze the social and spatial correlates of participation. It focuses on how robust rights, information, trust, associational membership, and fairness relate to participation across conservancies.
+
+### 3. Gender, fairness, and inclusive governance
+
+This chapter examines gendered patterns in participation, with particular attention to trust, associational life, perceptions of fairness, and whether women experience different pathways into conservancy decision-making.
+
+### 4. Social capital and participatory governance
+
+This chapter investigates whether and how participatory governance is associated with social capital, institutional trust, and collective action in community conservation.
+
+## Contribution
+
+The project contributes to debates on community conservation, institutional change, participatory governance, and social-ecological systems by:
+
+- measuring participation at the household level rather than only through organization-level compliance;
+- linking local governance outcomes to the historical incompleteness of devolution;
+- showing how social relations, not only demographic variables, shape participation;
+- using spatial analysis to examine how inclusion varies within conservancies;
+- connecting CBNRM practice to broader theories of institutions, rights, and development.
+
+## Status
+
+Expected completion: 2026. Manuscripts from the dissertation are in preparation for journal submission.

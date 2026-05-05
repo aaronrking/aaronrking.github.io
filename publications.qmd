@@ -1,0 +1,59 @@
+---
+title: "Publications & Writing"
+description: "Publications, manuscripts, and selected presentations."
+---
+
+## Published
+
+King, Aaron R. 2013. Review of *Nigeria: After the Nightmare*, by Iyorwuese Hagher. *African Studies Quarterly* 13(4): 109-110.
+
+## In revision, under review, or in preparation
+
+::: {.site-card}
+<span class="card-label">Revision</span>
+
+**Child, Brian, Aaron R. King, Amanda Chidakel, and T. Shimansky.** “What is CBNRM and has it been tried? Past, present, and future in Africa.” In C. Samimi and M. Bollig, eds., forthcoming edited collection on CBNRM in Southern Africa. London: James Currey.
+:::
+
+::: {.site-card}
+<span class="card-label">Under review</span>
+
+**Shimansky, T., Aaron R. King, L. Merz, S. Muyengwa, and Brian Child.** “The effects of governance structure and scale on community conservation in Southern Africa.”
+:::
+
+::: {.site-card}
+<span class="card-label">In preparation</span>
+
+**King, Aaron R.** “Shared landscape, divergent outcomes: The social and spatial correlates of participation in CBNRM governance in Kunene, Namibia.” Target journal: *Ecology and Society*.
+:::
+
+::: {.site-card}
+<span class="card-label">In preparation</span>
+
+**King, Aaron R., and Brian Child.** “Pathways into and out of aborted devolution of community-based natural resource management.” Target journal: *Society & Natural Resources*.
+:::
+
+::: {.site-card}
+<span class="card-label">In preparation</span>
+
+**King, Aaron R., and Brian Child.** “The impact of participatory governance on social capital in Namibian communal conservancies.”
+:::
+
+::: {.site-card}
+<span class="card-label">In preparation</span>
+
+**Child, Brian, Amanda Chidakel, and Aaron R. King.** “Can foraging societies compete in a modern economy? An economic and institutional analysis of land use in Sankuyo community, Botswana.” Target journal: *Conservation Science and Practice*.
+:::
+
+## Selected presentations
+
+- “Shared landscape, divergent outcomes: Social and institutional dimensions of conservancy governance participation in Namibia.” African Studies Association Annual Meeting, Atlanta, GA, 2025.
+- “Gender differences in governance participation and engagement in Namibian conservancies.” American Association of Geographers Annual Meeting, Detroit, MI, 2025.
+- “Shared landscape, divergent outcomes: Comparing communal conservancy governance participation in Kunene, Namibia.” Florida Society of Geographers Annual Meeting, Gainesville, FL, 2025.
+- “Measuring participatory governance in community-based natural resource management.” SEDAAG Annual Meeting, Norfolk, VA, 2023.
+
+## Profiles
+
+- [ORCID](https://orcid.org/0000-0003-0261-3268)
+- [Google Scholar](https://scholar.google.com/citations?user=DPA0MYgAAAAJ&hl=en)
+- [ResearchGate](https://www.researchgate.net/profile/Aaron-King-5)
