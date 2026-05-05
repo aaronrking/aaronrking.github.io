@@ -10,7 +10,7 @@ $navbar-fg: #26120B;
 $navbar-hl: #385928;
 $footer-bg: #26120B;
 $footer-fg: #F7F1E6;
-$border-radius: .9rem;
+$border-radius: .8rem;
 
 /*-- scss:rules --*/
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap');
@@ -23,34 +23,55 @@ $border-radius: .9rem;
   --espresso: #26120B;
   --paper: #F7F1E6;
   --offwhite: #FCFAF4;
+  --line: rgba(38, 18, 11, .14);
+  --soft-shadow: 0 14px 38px rgba(38, 18, 11, .08);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.04rem;
-  line-height: 1.68;
+  line-height: 1.66;
   background:
-    radial-gradient(circle at top left, rgba(242, 192, 99, 0.18), transparent 26rem),
-    var(--offwhite);
+    radial-gradient(circle at 12% 0%, rgba(242, 192, 99, .18), transparent 24rem),
+    linear-gradient(180deg, #FCFAF4 0%, #F7F1E6 100%);
+  color: var(--espresso);
+}
+
+main.content {
+  max-width: 1060px;
+}
+
+.page-layout-full main.content {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 h1, h2, h3, h4, .navbar-title {
   color: var(--espresso);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
 }
 
 h1 {
-  font-size: clamp(2.4rem, 4.6vw, 4.7rem);
-  line-height: .98;
+  font-size: clamp(2.45rem, 4vw, 4.9rem);
+  line-height: 1;
 }
 
 h2 {
-  margin-top: 2rem;
-  border-bottom: 1px solid rgba(56, 89, 40, .2);
+  margin-top: 2.4rem;
+  border-bottom: 1px solid rgba(56, 89, 40, .22);
   padding-bottom: .25rem;
 }
 
-.navbar, .navbar-title, .nav-link, .quarto-title-meta, .btn, .card-label, .eyebrow, .smallcaps, .site-note, footer {
+h3 {
+  line-height: 1.15;
+}
+
+.navbar, .navbar-title, .nav-link, .quarto-title-meta, .btn, .card-label, .eyebrow, .smallcaps, .site-note, footer, .profile-meta, .profile-links, .tag-list, .compact-list {
   font-family: "Source Sans 3", system-ui, sans-serif;
 }
 
@@ -62,7 +83,11 @@ h2 {
 .navbar-title {
   font-family: "Crimson Pro", Georgia, serif;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
 }
 
 a {
@@ -78,81 +103,127 @@ a:hover {
   background: transparent;
 }
 
-.hero {
+/* Homepage */
+.home-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(2.2rem, 5vw, 4.6rem) clamp(1rem, 3vw, 2rem) 3.2rem;
+}
+
+.profile-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
-  gap: clamp(1.5rem, 4vw, 4rem);
-  align-items: center;
-  margin: 2rem 0 3rem;
+  grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+  margin-bottom: clamp(2.5rem, 6vw, 5rem);
 }
 
-.hero-copy .eyebrow,
-.eyebrow {
-  color: var(--umber);
-  font-size: .86rem;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+.profile-card {
+  position: sticky;
+  top: 5.2rem;
+  text-align: center;
+  padding: 1.2rem .6rem 0;
 }
 
-.hero-copy p.lead {
-  font-size: clamp(1.18rem, 1.8vw, 1.45rem);
-  line-height: 1.55;
-  margin: 1.25rem 0 1.65rem;
-}
-
-.hero-media {
-  position: relative;
-}
-
-.hero-media::before {
-  content: "";
-  position: absolute;
-  inset: -1rem 1rem 1rem -1rem;
-  border: 1px solid rgba(140, 81, 46, .35);
-  border-radius: 1.5rem;
-  z-index: -1;
-}
-
-.hero-media img,
-.feature-image,
-.gallery-grid img,
-.headshot {
-  width: 100%;
-  height: auto;
-  border-radius: 1.5rem;
-  box-shadow: 0 18px 42px rgba(38, 18, 11, .13);
-}
-
-.headshot {
-  max-width: 260px;
+.profile-photo {
+  width: min(235px, 80%);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 999px;
-  border: 6px solid var(--paper);
+  box-shadow: var(--soft-shadow);
+  border: 7px solid var(--paper);
+  margin: 0 auto 1rem;
+  display: block;
 }
 
-.hero-portrait {
+.profile-card h2 {
+  border: 0;
+  margin: .2rem 0 .25rem;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.profile-meta {
+  line-height: 1.35;
+  color: rgba(38, 18, 11, .75);
+  margin-bottom: 1rem;
+}
+
+.profile-links {
   display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  margin-top: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .45rem .8rem;
+  margin: .8rem auto 1.2rem;
+  font-size: .95rem;
 }
 
-.hero-portrait p {
+.profile-section {
+  text-align: left;
+  border-top: 1px solid var(--line);
+  padding-top: .85rem;
+  margin-top: .9rem;
+}
+
+.profile-section h3 {
+  margin: 0 0 .45rem;
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--umber);
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.compact-list {
   margin: 0;
+  padding-left: 1.05rem;
+  font-size: .94rem;
+  line-height: 1.45;
+}
+
+.compact-list li {
+  margin-bottom: .32rem;
+}
+
+.bio-panel {
+  padding-top: .6rem;
+}
+
+.bio-panel h1 {
+  max-width: 870px;
+  margin: .4rem 0 1.2rem;
+}
+
+.bio-panel .lead {
+  font-size: clamp(1.16rem, 1.45vw, 1.38rem);
+  line-height: 1.58;
+  max-width: 900px;
+  margin-bottom: 1.1rem;
+}
+
+.bio-text {
+  max-width: 880px;
+  font-size: 1.06rem;
+}
+
+.eyebrow {
+  color: var(--umber);
+  font-size: .84rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
 }
 
 .button-row {
   display: flex;
   flex-wrap: wrap;
   gap: .75rem;
-  margin: 1.2rem 0 0;
+  margin: 1.35rem 0 0;
 }
 
 .btn-site {
   display: inline-block;
-  padding: .72rem 1rem;
+  padding: .68rem 1rem;
   border-radius: 999px;
   font-family: "Source Sans 3", sans-serif;
   font-weight: 700;
@@ -170,6 +241,29 @@ a:hover {
   background: rgba(56, 89, 40, .06);
 }
 
+.section-block {
+  margin: 3rem 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.1rem;
+}
+
+.section-heading h2 {
+  border: 0;
+  margin: 0;
+}
+
+.section-heading p {
+  max-width: 420px;
+  margin: 0 0 .55rem;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -182,11 +276,11 @@ a:hover {
 }
 
 .site-card {
-  background: rgba(247, 241, 230, .8);
+  background: rgba(252, 250, 244, .82);
   border: 1px solid rgba(56, 89, 40, .16);
   border-radius: 1rem;
-  padding: 1.1rem;
-  box-shadow: 0 10px 25px rgba(38, 18, 11, .05);
+  padding: 1.1rem 1.15rem;
+  box-shadow: 0 10px 25px rgba(38, 18, 11, .04);
 }
 
 .site-card h3 {
@@ -200,6 +294,63 @@ a:hover {
   letter-spacing: .1em;
   color: var(--umber);
   font-weight: 700;
+}
+
+.split-feature {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(360px, 1.1fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: center;
+  padding: 1.15rem;
+  border: 1px solid rgba(56, 89, 40, .16);
+  border-radius: 1.25rem;
+  background: rgba(247, 241, 230, .55);
+  box-shadow: 0 12px 30px rgba(38, 18, 11, .04);
+}
+
+.split-feature.reverse {
+  grid-template-columns: minmax(360px, 1.05fr) minmax(0, .95fr);
+}
+
+.split-copy {
+  padding: .4rem .8rem;
+}
+
+.split-copy h2 {
+  margin-top: 0;
+}
+
+.feature-image,
+.gallery-grid img,
+.hero-media img,
+.headshot {
+  width: 100%;
+  height: auto;
+  border-radius: 1.15rem;
+  box-shadow: var(--soft-shadow);
+}
+
+.feature-image {
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: 1rem;
+}
+
+.tag-list span {
+  display: inline-block;
+  padding: .25rem .55rem;
+  border: 1px solid rgba(140, 81, 46, .28);
+  border-radius: 999px;
+  background: rgba(242, 192, 99, .14);
+  color: var(--espresso);
+  font-size: .86rem;
 }
 
 .callout-box {
@@ -246,11 +397,42 @@ figcaption {
   font-size: .94rem;
 }
 
-@media (max-width: 900px) {
-  .hero,
+@media (max-width: 980px) {
+  .profile-intro-grid,
+  .split-feature,
+  .split-feature.reverse,
   .card-grid,
   .card-grid.two,
   .gallery-grid {
     grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    position: static;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .section-heading {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .home-shell {
+    padding-top: 1.5rem;
+  }
+
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-site {
+    text-align: center;
   }
 }

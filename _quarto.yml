@@ -50,8 +50,8 @@ format:
     link-external-newwindow: true
     link-external-icon: true
     grid:
-      sidebar-width: 250px
-      body-width: 850px
-      margin-width: 250px
+      sidebar-width: 230px
+      body-width: 1060px
+      margin-width: 220px
 execute:
   freeze: auto
