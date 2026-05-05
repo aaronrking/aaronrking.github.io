@@ -29,3 +29,11 @@ git push
 ## Custom domain
 
 The root `CNAME` file sets the canonical domain to `aaronrking.com`. Quarto should copy it into `docs/` when rendering. After publishing, configure GitHub Pages and DNS records for the apex domain and `www` variant.
+
+## Design notes
+
+The revised homepage uses a wider academic-profile layout inspired by classic Hugo Academic sites: a left profile column, a wider biography/research introduction, and broad full-width content sections below. The homepage is set to `page-layout: full`; normal interior pages remain article-width but use a wider body column than the first version.
+
+## Privacy and consent
+
+Before publishing, confirm permission/consent for any field or workshop photos that include identifiable people.
