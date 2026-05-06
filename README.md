@@ -1,115 +1,43 @@
-<h1 align="center">Astro Scholar</h1>
+# Aaron R. King — Personal Academic Website
 
-<p align="center">
-	A clean, modern Astro portfolio template for researchers, professors, students, and academic teams.
-</p>
+This repository contains the source code for my personal academic website:  
+**[aaronrking.com](https://aaronrking.com)**
 
-## Lighthouse
+The site is built with [Astro](https://astro.build/) and adapted from the **Astro Scholar** theme. It serves as a professional portfolio for academic hiring committees, collaborators, students, and others interested in my research and teaching.
 
-<p align="center">
-	<img src=".github/lighthouse-score.png" alt="Lighthouse score showing 100 across all categories" width="900" />
-</p>
+## About the site
 
-## Why This Template
+The website presents my work as a geographer studying community-based conservation, participatory governance, institutional change, and social-ecological systems, with a particular focus on community-based natural resource management in Southern Africa.
 
-Most portfolio templates look generic.
-This one is built for academic storytelling:
+The site includes:
 
-- Blog posts for ideas, notes, and essays
-- Project pages for research work
-- Publications section from BibTeX
-- Team and author profiles
-- Search and generated OG images
+- Research overview
+- Publications and manuscripts
+- Project descriptions
+- Teaching and mentoring information
+- CV download
+- Professional profile links
 
-Built with Astro for speed, static output, and straightforward deployment.
-
-## What You Get
-
-- Astro + MDX content workflow
-- Blog with table of contents and reading-friendly layout
-- Projects and publications pages
-- Team page and author data model
-- RSS feed and sitemap generation
-- Search indexing via Pagefind
-- GitHub Pages deployment workflow
-- PR preview deployment workflow
-
-## Quick Start
-
-1. Clone the repository.
-2. Install dependencies.
-3. Run the dev server.
-
-```bash
-npm install
-npm run dev
-```
-
-Then open http://localhost:4321/astro-scholar
-
-## Commands
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Start local dev server |
-| `npm run build` | Build production site |
-| `npm run preview` | Preview production build |
-| `npm run astro -- <command>` | Run Astro CLI commands |
-
-## Customization Guide
-
-Update these files first:
-
-- `src/consts.ts`: site title and global constants
-- `src/data/authors.json`: author profiles
-- `src/data/projects.json`: project entries
-- `src/data/publications.bib`: publication list
-- `src/content/blog/*.md`: blog posts
-- `src/styles/global.css`: theme and typography
-
-Layout and components:
-
-- `src/layouts/BlogPost.astro`: post layout
-- `src/components/Header.astro`: top navigation
-- `src/components/Footer.astro`: footer
-
-## Deployment
-
-This repo is ready for GitHub Pages.
-
-- `main` branch deploys via `.github/workflows/website-deploy.yml`
-- Pull requests deploy preview sites via `.github/workflows/preview.yml`
-
-Base path is configured in `astro.config.mjs`:
-
-- default: `/astro-scholar`
-- PR preview: `/astro-scholar/pr-previews/<PR_NUMBER>`
-
-## Project Structure
+## Repository structure
 
 ```text
-src/
-	components/      Reusable UI components
-	content/blog/    Markdown blog content
-	data/            Authors, projects, publications
-	layouts/         Page layouts
-	pages/           Route files
-	styles/          Global styles
-	utils/           Utility helpers
-public/
-	fonts/           Webfonts and static assets
+.
+├── public/              # Static files served directly
+│   ├── CNAME            # Custom domain configuration
+│   ├── img/             # Site images
+│   └── pdf/             # CV and other downloadable files
+├── src/
+│   ├── components/      # Reusable Astro components
+│   ├── content/         # Blog or note content
+│   ├── data/            # Authors, projects, publications
+│   ├── layouts/         # Page layouts
+│   ├── pages/           # Site pages and routes
+│   ├── styles/          # Global CSS
+│   └── utils/           # Utility scripts
+├── astro.config.mjs     # Astro configuration
+├── package.json         # Project dependencies and scripts
+└── tsconfig.json        # TypeScript configuration
 ```
-
-## Community
-
-- Contributing guide: [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md)
-- Code of conduct: [.github/CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md)
-- Security policy: [.github/SECURITY.md](.github/SECURITY.md)
-- Pull request template: [.github/pull_request_template.md](.github/pull_request_template.md)
-
-## Feedback & Suggestions
-
-If you have any suggestions/feedback, you can contact me via [my email](contact@shravangoswami.com). Alternatively, feel free to open an issue if you find bugs or want to request new features.
 
 ## License
 
